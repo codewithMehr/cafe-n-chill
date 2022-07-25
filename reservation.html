@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="res.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cafe n' chill | Reservation</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="healthandsafety.html">Health and safety</a></li>
+        <li><a href="reservation.html">Make a reservation</a></li>
+      </ul>
+      <p class="logo">Cafe n' chill</p>
+    </nav>
+    <img src="menu.png" alt="" height="30px" id="menu_logo" />
+    <p class="logo_small">Cafe n' chill</p>
+    <div class="small_screen">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="healthandsafety.html">Health and safety</a></li>
+          <li><a href="reservation.html">Make a reservation</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr />
+    <div class="form">
+      <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="visitor_name"
+            placeholder="John Doe"
+            pattern="[A-Z\sa-z]{3,20}"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="visitor_email"
+            placeholder="john.doe@email.com"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="visitor_phone"
+            placeholder="498-348-3872"
+            pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+            required
+          />
+        </div>
+        <hr />
+        <div class="elem-group inlined">
+          <label for="adult">Guest</label>
+          <input
+            type="number"
+            id="guest"
+            name="total_guest"
+            placeholder="2"
+            min="1"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="elem-group inlined">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+        <hr />
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea
+            id="message"
+            name="customer_message"
+            placeholder="Tell us anything else that might be important."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <p>CAFE n' CHILL</p>
+      <p>
+        801 West Georgia Street, Vancouver, BC V6C 1P7 CanadaLocated at the
+        Rosewood Hotel Georgia
+      </p>
+      <p>T: 604.673.7000</p>
+      <p>&copy;2022-cafe n' chill</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
