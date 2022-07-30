@@ -25,7 +25,8 @@
   grid-column-end: 3;
 }
 .Description p {
-  padding-top: 29px;
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 .savory,
 .sweets,
@@ -181,7 +182,7 @@ td {
   .coffee {
     display: grid;
     grid-template-columns: 1fr;
-   overflow: hidden;
+    overflow: hidden;
     height: auto;
     column-gap: 1%;
   }
